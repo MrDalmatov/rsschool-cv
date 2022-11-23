@@ -11,5 +11,13 @@ Beginner frontend developer. I live and work in Siberia. I try to spend a lot of
 * CSS/SCSS
 * JavaScript (Basic)
 * Git
+## Code Example
+
+    function past(h, m, s){
+      const convertHours = h * 60 * 60 * 1000;
+      const convertMinutes = m * 60 * 1000;
+      const convertSeconds = s * 1000;
+      return convertHours + convertMinutes + convertSeconds;
+    }
 
 
