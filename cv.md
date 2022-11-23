@@ -19,5 +19,14 @@ Beginner frontend developer. I live and work in Siberia. I try to spend a lot of
       const convertSeconds = s * 1000;
       return convertHours + convertMinutes + convertSeconds;
     }
+## Experience
+## Education
+* University: Novokuznetsk Trade and Economic College
+* Courses: 
+    * Udemy
+    * HTML Academy
+    * CodeBasics
+## English
+A2
 
 
