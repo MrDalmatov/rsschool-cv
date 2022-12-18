@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #EBEAEC;
@@ -44,12 +48,19 @@ body {
   text-decoration: none;
   padding: 0 12px;
   color: #3F3A45;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #928B99;
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  border-bottom: 1px solid #AEAEAE;
 }
 
 .section {
@@ -116,8 +127,57 @@ body {
   padding: 20px 0;
 }
 
+.section-list {
+  padding: 20px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.section-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
 .section-item > span {
   color: #928B99;
+}
+
+.contacts-item {
+  padding-left: 30px;
+}
+
+.contacts-item:nth-child(1)::before {
+  background-image: url(../assets/images/location.svg);
+}
+
+.contacts-item:nth-child(2)::before {
+  background-image: url(../assets/images/email.svg);
+}
+
+.contacts-item:nth-child(3)::before {
+  background-image: url(../assets/images/github.svg);
+}
+
+.contacts-item:nth-child(4)::before {
+  background-image: url(../assets/images/telegram.svg);
+}
+
+.contacts-item:nth-child(5)::before {
+  background-image: url(../assets/images/discord.svg);
+}
+
+.contacts-item::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .pre {
@@ -126,4 +186,43 @@ body {
   display: flex;
   justify-content: start;
 }
+
+.section-link {
+  text-decoration: none;
+  color: #928B99;
+  transition: 0.3s;
+}
+
+.section-link:hover {
+  color: #3F3A45;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss-logo {
+  width: 120px;
+  height: 45px;
+  background-image: url(../assets/images/rs_school_js.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.github-link {
+  text-decoration: none;
+  color: #3F3A45;
+  transition: 0.3s;
+}
+
+.github-link:hover {
+  color: #928B99;
+}
+
 
